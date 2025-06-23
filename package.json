@@ -1,12 +1,17 @@
 {
-  "name": "ping-pong-online",
+  "name": "group-manager-backend",
   "version": "1.0.0",
-  "description": "Online Ping Pong Game",
-  "main": "server.js",
+  "description": "Backend for the group manager app",
+  "main": "backend/index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node backend/index.js",
+    "dev": "nodemon backend/index.js"
   },
   "dependencies": {
-    "ws": "^8.13.0"
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 } 
